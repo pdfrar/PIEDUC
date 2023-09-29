@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Inclusivo Educacional</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src = "https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+    <style>
+        .imagemcabecario {
+            max-width: 100px;
+            max-height: 100px;
+            object-fit:contain;
+            object-position: 0px 0px;
+            .buttons {
+                display: flex;
+            }
+        }
+
+        body{
+            background-color: rgb(181, 118, 240);
+            color: white;
+            font: normal 12pt Arial;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "cabecario">
+            <img id = logopieducs alt = PIEDUCS src = "logopieduc.png" class = imagemcabecario>
+            <h1>PIEDUC - Portal Inclusivo Educacional</h1>
+        </div>
+        <div class="speech">
+            <p>Fale por meio do DAVI:</p>
+            <textarea id="textarea" class = texts></textarea>
+            <div>
+                <button id="btnGravar"><i class="fas fa-microphone"></i></button>
+                <button id="btnParar" disabled><i class="fas fa-microphone-slash"></i></button>
+                <button id="btnBaixar"><i class="fas fa-download"></i></button>
+                <button id="btnLimpar"><i class="fas fa-trash-alt"></i></button>
+            </div>
+        </div>
+    </header>
+    <p>Criado pelo 3º NEM</p>
+    <p>Visando a <strong>inclusão</strong> na educação.</p>
+    <script src = "Speech.js">
+        
+    </script>
+</body>
+</html>
